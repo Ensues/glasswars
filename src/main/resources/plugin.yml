@@ -1,0 +1,4 @@
+name: Glasswars
+main: io.github.ensues.glasswars.Main
+version: 1.18.2
+authors: [ Ashley Katt, trashoflevillage ]
