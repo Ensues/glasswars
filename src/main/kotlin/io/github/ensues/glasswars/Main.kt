@@ -1,7 +1,6 @@
 package io.github.ensues.glasswars
 
 import org.bukkit.Bukkit
-import org.bukkit.command.PluginCommand
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.AsyncPlayerChatEvent
@@ -21,7 +20,7 @@ class Main : JavaPlugin(), Listener {
 
     @EventHandler
     fun chatEvent(chatEvent: AsyncPlayerChatEvent) {
-        chatEvent.isCancelled = true;
+        chatEvent.isCancelled = true
         Bukkit.getOnlinePlayers().forEach {
             it.sendMessage("§8${chatEvent.player.name}:§7 ${chatEvent.message}")
         }
