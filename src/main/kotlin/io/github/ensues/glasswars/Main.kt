@@ -1,5 +1,6 @@
 package io.github.ensues.glasswars
 
+import io.github.ensues.glasswars.core.GlasswarsGame
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -8,11 +9,16 @@ import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin(), Listener {
+    val currentGame = GlasswarsGame() // TEMP
     override fun onEnable() {
         Bukkit.getLogger().info("Loaded Glasswars~!")
         Bukkit.getPluginManager().registerEvents(this, this)
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, { onTick() }, 1, 0) // Schedule ticks
     }
 
+    fun onTick(): Unit {
+        currentGame.tick()
+    }
     @EventHandler
     fun playerJoin(joinEvent: PlayerJoinEvent) {
         joinEvent.joinMessage = "§6" + joinEvent.player.name + " joined!"
