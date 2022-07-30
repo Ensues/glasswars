@@ -18,7 +18,9 @@ class GlasswarsGenerator(
             currentTime = 0
             val world = spawnLocation.world;
             if (world != null) {
-                world.dropItem(spawnLocation, spawnItem)
+                val item = world.dropItem(spawnLocation, spawnItem)
+                item.velocity = Vector(0, 0, 0)
+                item.pickupDelay = 15;
             }
         }
     }

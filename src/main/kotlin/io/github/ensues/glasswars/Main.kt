@@ -1,6 +1,7 @@
 package io.github.ensues.glasswars
 
 import io.github.ensues.glasswars.core.GlasswarsGame
+import io.github.ensues.glasswars.core.constants.initItems
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -14,6 +15,7 @@ class Main : JavaPlugin(), Listener {
         Bukkit.getLogger().info("Loaded Glasswars~!")
         Bukkit.getPluginManager().registerEvents(this, this)
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, { onTick() }, 1, 0) // Schedule ticks
+        initItems()
     }
 
     fun onTick(): Unit {
@@ -28,7 +30,7 @@ class Main : JavaPlugin(), Listener {
     fun chatEvent(chatEvent: AsyncPlayerChatEvent) {
         chatEvent.isCancelled = true
         Bukkit.getOnlinePlayers().forEach {
-            it.sendMessage("§8${chatEvent.player.name}:§7 ${chatEvent.message}")
+            it.sendMessage("§f${chatEvent.player.name}:§7 ${chatEvent.message}")
         }
     }
 }

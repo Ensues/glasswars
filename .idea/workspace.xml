@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039c34e3-1fbe-4772-931d-b463ef6c9c3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Tickable.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsPlayer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsTeam.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="039c34e3-1fbe-4772-931d-b463ef6c9c3a" name="Changes" comment="Added GlasswarsItem&#10;Modified GlasswarsGenerator">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/constants/GlasswarsItem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -72,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659150441662</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed warnings :)">
+      <created>1659150611892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659150611892</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CUSTOM CHAT!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="CUSTOM CHAT!!!!" />
+    <MESSAGE value="Fixed warnings :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed warnings :)" />
   </component>
 </project>
