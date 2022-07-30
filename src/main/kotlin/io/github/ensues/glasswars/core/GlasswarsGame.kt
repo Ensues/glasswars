@@ -6,36 +6,29 @@ import io.github.ensues.glasswars.core.generators.GlasswarsGenerator
 import org.bukkit.Bukkit
 import org.bukkit.Location
 import org.bukkit.Material
+import org.bukkit.World
 import org.bukkit.inventory.ItemStack
 
-class GlasswarsGame : Tickable {
-    val teams = listOf<GlasswarsTeam>()
+class GlasswarsGame(val world: World) : Tickable {
+    val teams = mutableListOf<GlasswarsTeam>()
     val generators = mutableListOf<GlasswarsGenerator>()
 
-    init { // TEMP
-        generators.add(GlasswarsGenerator(
-            40,
-            Location(Bukkit.getWorld("bedwars"), 404.5, 3.0, 545.5),
-            currencyWhite
-        ))
-        generators.add(GlasswarsGenerator(
-            200,
-            Location(Bukkit.getWorld("bedwars"), 404.5, 3.0, 545.5),
-            currencyGray
-        ))
+    init {
+        teams.add(GlasswarsTeam(GlasswarsColor.TEAL, Location(world,413.0, 2.0, 540.0), Location(world, 404.5, 3.5, 545.5)))
         generators.add(GlasswarsGenerator(
             600,
-            Location(Bukkit.getWorld("bedwars"), 459.5, 7.0, 540.5),
+            Location(world, 459.5, 7.0, 540.5),
             currencyRed
         ))
         generators.add(GlasswarsGenerator(
             1200,
-            Location(Bukkit.getWorld("bedwars"), 481.5, 11.0, 500.5),
+            Location(world, 481.5, 11.0, 500.5),
             currencyYellow
         ))
     }
 
     override fun tick() {
+        teams.forEach { it.tick() } // Tick all teams
         generators.forEach { it.tick() } // Tick all generators
     }
 

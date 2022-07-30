@@ -1,29 +1,38 @@
 package io.github.ensues.glasswars
 
 import io.github.ensues.glasswars.core.GlasswarsGame
+import io.github.ensues.glasswars.core.constants.GlasswarsColor
 import io.github.ensues.glasswars.core.constants.initItems
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.AsyncPlayerChatEvent
 import org.bukkit.event.player.PlayerJoinEvent
+import org.bukkit.inventory.ItemStack
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin(), Listener {
-    val currentGame = GlasswarsGame() // TEMP
+    var currentGame: GlasswarsGame? = null // TEMP
     override fun onEnable() {
         Bukkit.getLogger().info("Loaded Glasswars~!")
         Bukkit.getPluginManager().registerEvents(this, this)
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, { onTick() }, 1, 0) // Schedule ticks
+
+        // Temp game initialization
+        val gameWorld = Bukkit.getWorld("bedwars")
+        if (gameWorld != null) {
+            currentGame = GlasswarsGame(gameWorld)
+        }
+
         initItems()
     }
 
     fun onTick(): Unit {
-        currentGame.tick()
+        currentGame?.tick()
     }
     @EventHandler
     fun playerJoin(joinEvent: PlayerJoinEvent) {
-        joinEvent.joinMessage = "§6" + joinEvent.player.name + " joined!"
+        joinEvent.joinMessage = "§7" + joinEvent.player.name + " joined."
     }
 
     @EventHandler
