@@ -18,16 +18,16 @@ import org.bukkit.inventory.ItemStack
         val grayMeta = currencyGray.itemMeta
         if (grayMeta != null) {
             grayMeta.setDisplayName("§fBeta Essence§7 ||")
-            currencyWhite.itemMeta = grayMeta
+            currencyGray.itemMeta = grayMeta
         }
         val redMeta = currencyRed.itemMeta
         if (redMeta != null) {
-            redMeta.setDisplayName("§fGamma Essence§4 |||")
+            redMeta.setDisplayName("§fDelta Essence§4 |||")
             currencyRed.itemMeta = redMeta
         }
         val yellowMeta = currencyYellow.itemMeta
         if (yellowMeta != null) {
-            yellowMeta.setDisplayName("§fDelta Essence§e ||||")
+            yellowMeta.setDisplayName("§fGamma Essence§e ||||")
             currencyYellow.itemMeta = yellowMeta
         }
     }

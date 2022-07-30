@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="039c34e3-1fbe-4772-931d-b463ef6c9c3a" name="Changes" comment="Added GlasswarsItem&#10;Modified GlasswarsGenerator">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/constants/GlasswarsItem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/constants/GlasswarsItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/constants/GlasswarsItem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
