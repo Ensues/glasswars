@@ -1,6 +1,7 @@
 package io.github.ensues.glasswars.core
 
 import io.github.ensues.glasswars.core.generators.GlasswarsGenerator
+import io.github.ensues.glasswars.core.teams.GlasswarsTeamData
 import org.bukkit.Location
 
 abstract class GlasswarsMap {

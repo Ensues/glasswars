@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="039c34e3-1fbe-4772-931d-b463ef6c9c3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsMap.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsTeamData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/maps/MapSkyscrapers.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsTeam.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsTeam.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsTeam.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/teams/GlasswarsTeam.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsTeamData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/teams/GlasswarsTeamData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/maps/MapSkyscrapers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/maps/MapSkyscrapers.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="io.github.ensues.glasswars.core.teams" />
       <recent name="io.github.ensues.glasswars.core.generators" />
       <recent name="io.github.ensues.glasswars.core" />
     </key>

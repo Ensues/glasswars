@@ -5,7 +5,7 @@ import org.bukkit.Location
 import org.bukkit.inventory.ItemStack
 import org.bukkit.util.Vector
 
-class GlasswarsGenerator(
+data class GlasswarsGenerator(
     private val maxTimeUntilSpawn: Long,
     private val spawnLocation: Location,
     private val spawnItem: ItemStack,
