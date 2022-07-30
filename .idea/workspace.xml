@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039c34e3-1fbe-4772-931d-b463ef6c9c3a" name="Changes" comment="Added GlasswarsItem&#10;Modified GlasswarsGenerator">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/constants/GlasswarsItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="039c34e3-1fbe-4772-931d-b463ef6c9c3a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/GlasswarsGame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/io/github/ensues/glasswars/core/generators/GlasswarsGenerator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659150611892</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added GlasswarsItem&#10;Modified GlasswarsGenerator&#10;Also added some more generators">
+      <created>1659155742554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659155742554</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CUSTOM CHAT!!!!" />
     <MESSAGE value="Fixed warnings :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed warnings :)" />
+    <MESSAGE value="Added GlasswarsItem&#10;Modified GlasswarsGenerator&#10;Also added some more generators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GlasswarsItem&#10;Modified GlasswarsGenerator&#10;Also added some more generators" />
   </component>
 </project>

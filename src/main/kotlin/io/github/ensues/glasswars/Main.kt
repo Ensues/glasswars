@@ -5,6 +5,7 @@ import io.github.ensues.glasswars.core.constants.initItems
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
+import org.bukkit.event.inventory.CraftItemEvent
 import org.bukkit.event.player.AsyncPlayerChatEvent
 import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.plugin.java.JavaPlugin
@@ -32,5 +33,10 @@ class Main : JavaPlugin(), Listener {
         Bukkit.getOnlinePlayers().forEach {
             it.sendMessage("§f${chatEvent.player.name}:§7 ${chatEvent.message}")
         }
+    }
+
+    @EventHandler
+    fun craftEvent(craftItemEvent: CraftItemEvent) {
+        craftItemEvent.isCancelled = true
     }
 }
