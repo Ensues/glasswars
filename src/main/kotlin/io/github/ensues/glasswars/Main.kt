@@ -10,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class Main : JavaPlugin(), Listener {
     override fun onEnable() {
         Bukkit.getLogger().info("Loaded Glasswars~!")
+        Bukkit.getPluginManager().registerEvents(this, this)
     }
 
     @EventHandler
