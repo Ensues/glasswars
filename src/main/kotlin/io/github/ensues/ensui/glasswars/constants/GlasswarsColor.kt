@@ -1,4 +1,4 @@
-package io.github.ensues.glasswars.core.constants
+package io.github.ensues.ensui.glasswars.constants
 
 import org.bukkit.Material
 

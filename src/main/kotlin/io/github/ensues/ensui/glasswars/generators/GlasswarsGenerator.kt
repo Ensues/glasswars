@@ -1,6 +1,6 @@
-package io.github.ensues.glasswars.core.generators
+package io.github.ensues.ensui.glasswars.generators
 
-import io.github.ensues.glasswars.Tickable
+import io.github.ensues.ensui.core.Tickable
 import org.bukkit.Location
 import org.bukkit.inventory.ItemStack
 import org.bukkit.util.Vector

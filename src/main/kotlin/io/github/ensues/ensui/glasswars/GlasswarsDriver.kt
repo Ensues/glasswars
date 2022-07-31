@@ -1,9 +1,9 @@
-package io.github.ensues.glasswars.core
+package io.github.ensues.ensui.glasswars
 
-import io.github.ensues.glasswars.Tickable
-import io.github.ensues.glasswars.core.exceptions.FailedToCreateRoomException
-import io.github.ensues.glasswars.core.exceptions.NoAvailableRoomsException
-import io.github.ensues.glasswars.core.maps.GlasswarsMapType
+import io.github.ensues.ensui.core.Tickable
+import io.github.ensues.ensui.glasswars.exceptions.FailedToCreateRoomException
+import io.github.ensues.ensui.glasswars.exceptions.NoAvailableRoomsException
+import io.github.ensues.ensui.glasswars.maps.GlasswarsMapType
 import org.bukkit.Bukkit
 import org.bukkit.World
 import org.bukkit.WorldCreator
@@ -16,7 +16,7 @@ const val GLASSWARS_GAME_PREFIX = "glasswars/games/game-"
 /**
  * The glasswars driver is responsible for handling all the glasswars games.
  */
-class GlasswarsDriver : Tickable{
+class GlasswarsDriver : Tickable {
     private val currentGames = arrayOfNulls<GlasswarsGame>(4)
 
     fun createGame(mapType: GlasswarsMapType) {
@@ -54,7 +54,6 @@ class GlasswarsDriver : Tickable{
         // Copy new map
         fromLoc.copyRecursively(toLoc, true)
         // Delete unnecessary data
-        Bukkit.getLogger().info(fromLoc.toPath().resolve("uid.dat").toString());
         val uidLoc = File(fromLoc.toPath().resolve("uid.dat").toUri())
         if (uidLoc.exists()) {
             uidLoc.delete()

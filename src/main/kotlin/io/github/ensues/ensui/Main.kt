@@ -1,8 +1,8 @@
-package io.github.ensues.glasswars
+package io.github.ensues.ensui
 
-import io.github.ensues.glasswars.core.GlasswarsDriver
-import io.github.ensues.glasswars.core.constants.initItems
-import io.github.ensues.glasswars.core.maps.GlasswarsMapType
+import io.github.ensues.ensui.glasswars.GlasswarsDriver
+import io.github.ensues.ensui.glasswars.constants.initItems
+import io.github.ensues.ensui.glasswars.maps.GlasswarsMapType
 import org.bukkit.Bukkit
 import org.bukkit.World
 import org.bukkit.WorldCreator

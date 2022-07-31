@@ -1,7 +1,7 @@
-package io.github.ensues.glasswars.core.maps
+package io.github.ensues.ensui.glasswars.maps
 
-import io.github.ensues.glasswars.core.generators.GlasswarsGenerator
-import io.github.ensues.glasswars.core.teams.GlasswarsTeamData
+import io.github.ensues.ensui.glasswars.generators.GlasswarsGenerator
+import io.github.ensues.ensui.glasswars.teams.GlasswarsTeamData
 import org.bukkit.Location
 import org.bukkit.World
 

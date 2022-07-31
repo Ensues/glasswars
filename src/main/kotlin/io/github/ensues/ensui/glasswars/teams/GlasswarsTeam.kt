@@ -1,7 +1,7 @@
-package io.github.ensues.glasswars.core.teams
+package io.github.ensues.ensui.glasswars.teams
 
-import io.github.ensues.glasswars.Tickable
-import io.github.ensues.glasswars.core.GlasswarsPlayer
+import io.github.ensues.ensui.core.Tickable
+import io.github.ensues.ensui.glasswars.GlasswarsPlayer
 
 class GlasswarsTeam(val teamData : GlasswarsTeamData) : Tickable {
     val players = listOf<GlasswarsPlayer>()

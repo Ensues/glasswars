@@ -1,9 +1,9 @@
-package io.github.ensues.glasswars.core.teams
+package io.github.ensues.ensui.glasswars.teams
 
-import io.github.ensues.glasswars.core.constants.GlasswarsColor
-import io.github.ensues.glasswars.core.constants.currencyGray
-import io.github.ensues.glasswars.core.constants.currencyWhite
-import io.github.ensues.glasswars.core.generators.GlasswarsGenerator
+import io.github.ensues.ensui.glasswars.constants.GlasswarsColor
+import io.github.ensues.ensui.glasswars.constants.currencyGray
+import io.github.ensues.ensui.glasswars.constants.currencyWhite
+import io.github.ensues.ensui.glasswars.generators.GlasswarsGenerator
 import org.bukkit.Location
 
 data class GlasswarsTeamData(

@@ -1,4 +1,4 @@
-package io.github.ensues.glasswars.core.maps
+package io.github.ensues.ensui.glasswars.maps
 
 import org.bukkit.World
 
