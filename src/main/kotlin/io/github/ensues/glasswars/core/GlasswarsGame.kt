@@ -1,6 +1,7 @@
 package io.github.ensues.glasswars.core
 
 import io.github.ensues.glasswars.Tickable
+import io.github.ensues.glasswars.core.maps.GlasswarsMap
 import io.github.ensues.glasswars.core.teams.GlasswarsTeam
 
 class GlasswarsGame(private val gameMap: GlasswarsMap) : Tickable {
