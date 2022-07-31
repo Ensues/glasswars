@@ -7,6 +7,7 @@ import io.github.ensues.ensui.glasswars.maps.GlasswarsMapType
 import org.bukkit.Bukkit
 import org.bukkit.World
 import org.bukkit.WorldCreator
+import org.bukkit.entity.Player
 import java.io.File
 import java.io.IOException
 
@@ -19,19 +20,30 @@ const val GLASSWARS_GAME_PREFIX = "glasswars/games/game-"
 class GlasswarsDriver : Tickable {
     private val currentGames = arrayOfNulls<GlasswarsGame>(4)
 
-    fun createGame(mapType: GlasswarsMapType) {
+    // Debug default param
+    fun createGame(mapType: GlasswarsMapType = GlasswarsMapType.SKYSCRAPERS): GlasswarsGame {
         val index = currentGames.indexOf(null)
         if (index<0) {
             throw NoAvailableRoomsException("There are no available GlassWars rooms.");
         } else {
             val gameWorld = loadMap(GLASSWARS_MAP_PREFIX + mapType.mapName, GLASSWARS_GAME_PREFIX + index)
             if (gameWorld != null) {
-                currentGames[index] = GlasswarsGame(mapType.getInstance(gameWorld))
+                val game = GlasswarsGame(mapType.getInstance(gameWorld))
+                currentGames[index] = game
+                return game
             } else {
                 throw FailedToCreateRoomException("Could not create Glasswars room.");
             }
         }
-
+    }
+    fun connectToGame(player: Player) {
+        val foundGame = currentGames.filterNotNull().find { it.canJoin() }
+        if (foundGame == null) {
+            val game = createGame()
+            game.addPlayer(player)
+        } else {
+            foundGame.addPlayer(player)
+        }
     }
 
     override fun tick() {

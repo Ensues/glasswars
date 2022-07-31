@@ -12,41 +12,49 @@ class MapSkyscrapers(mapWorld: World) : GlasswarsMap(mapWorld) {
     override val teams = listOf(
         GlasswarsTeamData(
         GlasswarsColor.TEAL,
-        Location(mapWorld, 404.5, 2.0, 540.5, -90.0f, 0.0f),
+            1,
+        Location(mapWorld,404.5, 2.0, 540.5, -90.0f, 0.0f),
         Location(mapWorld, 413.0, 2.0, 540.5),
         Location(mapWorld, 404.5, 3.0, 545.5)
     ), GlasswarsTeamData(
         GlasswarsColor.ORANGE,
+            1,
         Location(mapWorld, 404.5, 2.0, 460.5, -90.0f, 0.0f),
         Location(mapWorld, 413.0, 2.0, 460.0),
         Location(mapWorld, 404.5, 3.0, 465.5)
     ), GlasswarsTeamData(
         GlasswarsColor.MAGENTA,
+            1,
         Location(mapWorld, 459.5, 2.0, 405.5, 0.0f,   0.0f),
         Location(mapWorld, 459.0, 2.0, 414.0),
         Location(mapWorld, 454.5, 3.0, 405.5)
     ), GlasswarsTeamData(
         GlasswarsColor.BROWN,
+            1,
         Location(mapWorld, 540.5, 2.0, 405.5, 0.0f,   0.0f),
         Location(mapWorld, 540.0, 2.0, 414.0),
         Location(mapWorld, 535.5, 3.0, 405.5)
     ), GlasswarsTeamData(
         GlasswarsColor.BLUE,
+            1,
         Location(mapWorld, 595.5, 2.0, 460.5, 90.0f,  0.0f),
         Location(mapWorld, 586.0, 2.0, 460.0),
         Location(mapWorld, 595.5, 3.0, 455.5)
     ), GlasswarsTeamData(
         GlasswarsColor.GREEN,
+            1,
         Location(mapWorld, 595.5, 2.0, 540.5, 90.0f,  0.0f),
         Location(mapWorld, 586.0, 2.0, 540.0),
         Location(mapWorld, 595.5, 3.0, 535.5)
     ), GlasswarsTeamData(
         GlasswarsColor.YELLOW,
+            1,
         Location(mapWorld, 540.5, 2.0, 595.5, 180.0f, 0.0f),
         Location(mapWorld, 540.0, 2.0, 586.0),
         Location(mapWorld, 545.5, 3.0, 595.5)
     ), GlasswarsTeamData(
         GlasswarsColor.RED,
+            1,
         Location(mapWorld, 459.5, 2.0, 595.5, 180.0f, 0.0f),
         Location(mapWorld, 459.0, 2.0, 586.0),
         Location(mapWorld, 464.5, 3.0, 595.5)

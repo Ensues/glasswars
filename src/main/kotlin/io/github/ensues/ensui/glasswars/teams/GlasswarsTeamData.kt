@@ -8,6 +8,7 @@ import org.bukkit.Location
 
 data class GlasswarsTeamData(
     val teamColor: GlasswarsColor,
+    val maxPlayers: Int,
     val respawnLoc: Location,
     val glassLocation: Location,
     val spawnerLoc: Location,

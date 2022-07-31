@@ -1,4 +1,4 @@
-package io.github.ensues.ensui
+package io.github.ensues.ensui.core
 
 import io.github.ensues.ensui.glasswars.GlasswarsDriver
 import io.github.ensues.ensui.glasswars.constants.initItems
@@ -25,12 +25,13 @@ class Main : JavaPlugin(), Listener {
         gwDriver.createGame(GlasswarsMapType.SKYSCRAPERS)
     }
 
-    fun onTick(): Unit {
+    private fun onTick(): Unit {
         gwDriver.tick()
     }
     @EventHandler
     fun playerJoin(joinEvent: PlayerJoinEvent) {
         joinEvent.joinMessage = "§7" + joinEvent.player.name + " joined."
+        gwDriver.connectToGame(joinEvent.player)
     }
 
     @EventHandler
@@ -44,14 +45,5 @@ class Main : JavaPlugin(), Listener {
     @EventHandler
     fun craftEvent(craftItemEvent: CraftItemEvent) {
         craftItemEvent.isCancelled = true
-    }
-}
-
-fun getWorld(worldName: String): World {
-    val w = Bukkit.getWorld(worldName)
-    return if (w != null) {
-        w
-    } else {
-        Bukkit.createWorld(WorldCreator(worldName)) ?: throw NullPointerException("World could not be created")
     }
 }
