@@ -76,5 +76,6 @@ class MapSkyscrapers(mapWorld: World) : GlasswarsMap(mapWorld) {
     override val minLoc = Location(mapWorld, 391.5, -18.5, 392.5)
     override val maxLoc = Location(mapWorld, 608.5, 31.5, 608.5)
     override val lobbyLocation = Location(mapWorld, 0.5, 1.0, 0.5)
-
+    override val maxPlayers: Int
+        get() = teams.sumOf { it.maxPlayers }
 }

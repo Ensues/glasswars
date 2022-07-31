@@ -7,7 +7,7 @@ import org.bukkit.World
 
 abstract class GlasswarsMap(val mapWorld: World) {
     abstract val teams : List<GlasswarsTeamData>
-    val maxPlayers = teams.sumOf { it.maxPlayers }
+    abstract val maxPlayers : Int
     abstract val generators : List<GlasswarsGenerator>
     abstract val spectateLocation : Location
     abstract val lobbyLocation : Location
